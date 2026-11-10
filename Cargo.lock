@@ -111,7 +111,7 @@ source = "git+https://github.com/alacritty/alacritty?rev=6071a7bf35cfd99be8ba70f
 dependencies = [
  "alacritty_config",
  "alacritty_config_derive",
- "base64",
+ "base64 0.21.7",
  "bitflags 2.4.0",
  "home",
  "libc",
@@ -422,9 +422,15 @@ dependencies = [
 
 [[package]]
 name = "base64"
-version = "0.21.5"
+version = "0.21.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "35636a1494ede3b646cc98f74f8e62c773a38a659ebc777a2cf26b9b74171df9"
+checksum = "9d297deb1925b89f2ccc13d7635fa0714f12c87adce1c75356b39ca9b7178567"
+
+[[package]]
+name = "base64"
+version = "0.23.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ac07cdecf99051d9a5238b80f35af32cdeba5b336e55d957b318b50137e18da5"
 
 [[package]]
 name = "bincode"
@@ -2814,7 +2820,7 @@ dependencies = [
  "Inflector",
  "alacritty_terminal",
  "anyhow",
- "base64",
+ "base64 0.23.1",
  "bytemuck",
  "chrono",
  "clap",
@@ -2856,7 +2862,7 @@ dependencies = [
  "tar",
  "thiserror",
  "tokio",
- "toml 0.5.9",
+ "toml 0.8.2",
  "toml_edit 0.19.14",
  "tracing 0.2.0",
  "tracing-appender",
@@ -2940,7 +2946,7 @@ dependencies = [
  "strum",
  "strum_macros",
  "tar",
- "toml 0.5.9",
+ "toml 0.8.2",
  "toml_edit 0.19.14",
  "tracing 0.2.0",
  "trash",
@@ -3904,7 +3910,7 @@ version = "1.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9bd9647b268a3d3e14ff09c23201133a62589c658db02bb7388c7246aafe0590"
 dependencies = [
- "base64",
+ "base64 0.21.7",
  "indexmap 1.9.3",
  "line-wrap",
  "quick-xml 0.28.2",
@@ -4310,7 +4316,7 @@ version = "0.11.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "046cd98826c46c2ac8ddecae268eb5c2e58628688a5fc7a2643704a73faba95b"
 dependencies = [
- "base64",
+ "base64 0.21.7",
  "bytes",
  "encoding_rs",
  "futures-core",
@@ -5854,7 +5860,7 @@ version = "0.33.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ae32eb823aab35fc343b19c4d354f70e713b442ce34cdfa8497bf6c39af8a342"
 dependencies = [
- "base64",
+ "base64 0.21.7",
  "log",
  "pico-args",
  "usvg-parser",
@@ -6230,7 +6236,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6c16f85353656b301a4472ad649e9b17cc47400cee50a94bd9b24e7886a8130f"
 dependencies = [
  "anyhow",
- "base64",
+ "base64 0.21.7",
  "bincode",
  "directories-next",
  "log",
